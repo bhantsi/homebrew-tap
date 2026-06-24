@@ -17,7 +17,7 @@
 class TasmiyahCli < Formula
   desc "A beautiful, fast terminal greeting that prints Bismillah and Islamic phrases"
   homepage "https://github.com/bhantsi/tasmiyah-cli"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
@@ -26,18 +26,18 @@ class TasmiyahCli < Formula
     # binary does not run on Intel under Rosetta 2.
     on_arm do
       url "https://github.com/bhantsi/tasmiyah-cli/releases/download/v#{version}/tasmiyah-aarch64-apple-darwin.tar.gz"
-      sha256 "9037f66bc70c5976a24583923cea70b25de6bef1febfa2ff13136e5f95751643"
+      sha256 "8166411102a87e497704a48aacfebb246ae26473ab1d9e622482b0257948b955"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/bhantsi/tasmiyah-cli/releases/download/v#{version}/tasmiyah-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "f1f659c06a17e7b2dd8e449ba30b89d5899d7a2f3100bfc3bf8a2170b9fb8db8"
+      sha256 "f68820890b1f4424516fac1cb2424a4900c73ec0047f79265c78033764f58cb8"
     end
     on_intel do
       url "https://github.com/bhantsi/tasmiyah-cli/releases/download/v#{version}/tasmiyah-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "63cafbdef5027f206262d021e64cdf18497387547cd926d1c67ca07abb9e4918"
+      sha256 "014a59864f1315041cb1740157055900be60f407da7de7e6339755fe2b002a27"
     end
   end
 
