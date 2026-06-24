@@ -26,18 +26,18 @@ class TasmiyahCli < Formula
     # binary does not run on Intel under Rosetta 2.
     on_arm do
       url "https://github.com/bhantsi/tasmiyah-cli/releases/download/v#{version}/tasmiyah-aarch64-apple-darwin.tar.gz"
-      sha256 "8166411102a87e497704a48aacfebb246ae26473ab1d9e622482b0257948b955"
+      sha256 "53360941fce2113b3a7b6668c2c2323d8f4b0f09e9c8cb21fbbc3cae7810159b"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/bhantsi/tasmiyah-cli/releases/download/v#{version}/tasmiyah-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "f68820890b1f4424516fac1cb2424a4900c73ec0047f79265c78033764f58cb8"
+      sha256 "75718eb86bf98b4985c495b9bb539f78cd95204e7d1977840ef1b88531173c03"
     end
     on_intel do
       url "https://github.com/bhantsi/tasmiyah-cli/releases/download/v#{version}/tasmiyah-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "014a59864f1315041cb1740157055900be60f407da7de7e6339755fe2b002a27"
+      sha256 "aaa9f9b8f9511d3704d5b4e2ddfd9e5b24374bd84057a70e6169dc5eab8de615"
     end
   end
 
