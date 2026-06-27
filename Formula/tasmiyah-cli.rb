@@ -17,27 +17,28 @@
 class TasmiyahCli < Formula
   desc "A beautiful, fast terminal greeting that prints Bismillah and Islamic phrases"
   homepage "https://github.com/bhantsi/tasmiyah-cli"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
-    # Only Apple Silicon is shipped as a prebuilt binary. Intel Mac users
-    # should install via `cargo install tasmiyah-cli` instead — the ARM
-    # binary does not run on Intel under Rosetta 2.
     on_arm do
       url "https://github.com/bhantsi/tasmiyah-cli/releases/download/v#{version}/tasmiyah-aarch64-apple-darwin.tar.gz"
-      sha256 "53360941fce2113b3a7b6668c2c2323d8f4b0f09e9c8cb21fbbc3cae7810159b"
+      sha256 "fd78f9a1e66d12a230e66403a3beed10c4c7844d5a166bf1ac52a1f06d36459a"
+    end
+    on_intel do
+      url "https://github.com/bhantsi/tasmiyah-cli/releases/download/v#{version}/tasmiyah-x86_64-apple-darwin.tar.gz"
+      sha256 "060d152c31fc9ddd247c14797d24b47f987cbba3e1a014e2424e0f621c1c11e4"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/bhantsi/tasmiyah-cli/releases/download/v#{version}/tasmiyah-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "75718eb86bf98b4985c495b9bb539f78cd95204e7d1977840ef1b88531173c03"
+      sha256 "9e77f537e1e3fdfc089cd6c349cb7c0a796f2988b10d4e4e1b14c7fcd1857a93"
     end
     on_intel do
       url "https://github.com/bhantsi/tasmiyah-cli/releases/download/v#{version}/tasmiyah-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "aaa9f9b8f9511d3704d5b4e2ddfd9e5b24374bd84057a70e6169dc5eab8de615"
+      sha256 "8dcb75918f664e3aa0a37f93d5f4aa0e3bae5779a3143ce38d9219cd74f8fcbd"
     end
   end
 
